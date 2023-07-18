@@ -15,10 +15,10 @@ void loop() {
   if(Serial.available()){
         input = Serial.read();
         
-        if(input=='2'){
+        if(input=='+'){
           angle = angle+1;    
         }
-        if(input=='1'){
+        if(input=='-'){
           angle = angle-1;
         }
         Serial.println(angle);
